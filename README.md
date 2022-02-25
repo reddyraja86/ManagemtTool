@@ -1,7 +1,13 @@
 # ManagemtTool
+	Inital Approach :
+	1. Create product API first
+	2. Create roles APIS
+	3. While creating users add assing product and role.
+	
+	Convert above services into Docker Images
+	Move them to kubernates etc
 
-
-Idea 
+## Ideal is to Create a Project Management Tool 
 
 PM Tools :
 
@@ -21,6 +27,7 @@ PM Tools :
     4. Map users to the roles
     5. Create Products
     6. Map users to the Product
+    	
 
     Capture One on One Meetings :
     1. Select the Prduct and get the users
