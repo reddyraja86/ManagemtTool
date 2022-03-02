@@ -10,11 +10,11 @@
 	</parent>
 	<groupId>com.productmanagement</groupId>
 	<artifactId>ProductManagement</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>ProductManagement</name>
 	<description>Product Management</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -20,3 +20,30 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
+### Implementation
+
+* Create the Docker container
+* generate the profiles
+* Based on environament start the respective profiles 
+	* we can pass the profile as an environment variable to the docker image and kubenetes deployment
+* Volumes we will implement later
+
+### Docker Implementation
+			
+* build docker file and tag it as v1
+** 		
+* 	Create a network 
+* 	docker network create product
+* 	Run mongo container 			
+* 	docker container run -p 27017:27017 --name=mongo --network=product -e MONGO_INITDB_ROOT_USERNAME=mongo  -e MONGO_INITDB_ROOT_PASSWORD=mongo mongo
+		
+				
+*  Running the product image
+*  docker run   --name=productmanagement   --rm   --network=product   -p 8080:8080   -e MONGO_URL=mongodb://mongo:27017/ProductDB  productmanagement:v1
+			or 
+* docker run   --name=productmanagement   --rm   --network=product   -p 8080:8080   -e spring.data.mongodb.host=mongo  productmanagement:v1
+* 	Or similary pass the profile in above command
+
+
+### Moving to the kubernetes
+*
